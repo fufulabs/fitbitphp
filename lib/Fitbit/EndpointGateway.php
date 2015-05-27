@@ -89,7 +89,7 @@ class EndpointGateway
       $body = array();
     }
 
-    $response = $this->service->request($path, $method, $body, $extraHeaders);
+    $response = $this->service->request($path, $body, $method, $extraHeaders);
 
     return $this->parseResponse($response);
   }
