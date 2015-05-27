@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2a4173273a11941fea21d533017cd4e0",
+    "hash": "31892708cb6d969b03fe83d070ca7dbb",
     "packages": [
         {
             "name": "and/oauth",
@@ -365,7 +365,7 @@
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "stable",
+    "minimum-stability": "beta",
     "stability-flags": {
         "and/oauth": 20
     },
