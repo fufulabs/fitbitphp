@@ -4,20 +4,20 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "31892708cb6d969b03fe83d070ca7dbb",
+    "hash": "b4c1ef4896e1a0e0b8dbf4c429c7b3b6",
     "packages": [
         {
             "name": "and/oauth",
-            "version": "dev-master",
+            "version": "0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/logical-and/php-oauth.git",
-                "reference": "ec1bffcf95865948104b8eeddfccdfc6766bf7aa"
+                "reference": "8199fb5d5e67cbd936c0a93a93807b7ebb008cc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/logical-and/php-oauth/zipball/ec1bffcf95865948104b8eeddfccdfc6766bf7aa",
-                "reference": "ec1bffcf95865948104b8eeddfccdfc6766bf7aa",
+                "url": "https://api.github.com/repos/logical-and/php-oauth/zipball/8199fb5d5e67cbd936c0a93a93807b7ebb008cc1",
+                "reference": "8199fb5d5e67cbd936c0a93a93807b7ebb008cc1",
                 "shasum": ""
             },
             "require": {
@@ -41,12 +41,13 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.7-dev"
+                    "dev-master": "0.6-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "OAuth\\": "src"
+                    "OAuth\\": "src/",
+                    "OAuthTest\\": "tests/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -87,7 +88,6 @@
                 "bitly",
                 "box",
                 "dailymotion",
-                "deviantart",
                 "dropbox",
                 "etsy",
                 "eve",
@@ -120,7 +120,7 @@
                 "vkontakte",
                 "yahoo"
             ],
-            "time": "2015-05-16 20:10:13"
+            "time": "2015-04-15 19:54:19"
         },
         {
             "name": "gregwar/cache",
@@ -365,10 +365,8 @@
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "beta",
-    "stability-flags": {
-        "and/oauth": 20
-    },
+    "minimum-stability": "stable",
+    "stability-flags": [],
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

@@ -17,10 +17,9 @@
             "homepage": "http://eli-white.com"
         }
     ],
-    "minimum-stability": "beta",
     "require": {
         "php": ">=5.3.0",
-        "and/oauth": "0.7.*@dev"
+        "and/oauth": "0.6"
     },
     "autoload": {
         "psr-0": {
