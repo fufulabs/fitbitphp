@@ -1,22 +1,23 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
     ],
-    "hash": "0ba615eb9af93cf4712b772b51f768d6",
+    "hash": "de8b942cc4d140832369b5809df98213",
     "packages": [
         {
             "name": "lusitanian/oauth",
-            "version": "v0.2.2",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Lusitanian/PHPoAuthLib.git",
-                "reference": "a664fbdaf6c663689c08b6c32ebdf17a037e0624"
+                "reference": "f9f81866c3ece60aa763b3831a77c24264361d58"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Lusitanian/PHPoAuthLib/zipball/a664fbdaf6c663689c08b6c32ebdf17a037e0624",
-                "reference": "a664fbdaf6c663689c08b6c32ebdf17a037e0624",
+                "url": "https://api.github.com/repos/Lusitanian/PHPoAuthLib/zipball/f9f81866c3ece60aa763b3831a77c24264361d58",
+                "reference": "f9f81866c3ece60aa763b3831a77c24264361d58",
                 "shasum": ""
             },
             "require": {
@@ -28,6 +29,7 @@
                 "symfony/http-foundation": "~2.1"
             },
             "suggest": {
+                "ext-openssl": "Allows for usage of secure connections with the stream-based HTTP client.",
                 "predis/predis": "Allows using the Redis storage backend.",
                 "symfony/http-foundation": "Allows using the Symfony Session storage backend."
             },
@@ -54,9 +56,7 @@
                 },
                 {
                     "name": "Pieter Hordijk",
-                    "email": "info@pieterhordijk.com",
-                    "homepage": "https://pieterhordijk.com",
-                    "role": "developer"
+                    "email": "info@pieterhordijk.com"
                 }
             ],
             "description": "PHP 5.3+ oAuth 1/2 Library",
@@ -66,23 +66,19 @@
                 "oauth",
                 "security"
             ],
-            "time": "2013-09-03 21:15:38"
+            "time": "2014-11-21 20:09:01"
         }
     ],
-    "packages-dev": [
-
-    ],
-    "aliases": [
-
-    ],
+    "packages-dev": [],
+    "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [
-
-    ],
+    "stability-flags": {
+        "lusitanian/oauth": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
     "platform": {
         "php": ">=5.3.0"
     },
-    "platform-dev": [
-
-    ]
+    "platform-dev": []
 }
