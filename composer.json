@@ -19,7 +19,7 @@
     ],
     "require": {
         "php": ">=5.3.0",
-        "lusitanian/oauth": "dev-master"
+        "lusitanian/oauth": "0.1.*@dev"
     },
     "autoload": {
         "psr-0": {
