@@ -1,10 +1,10 @@
 {
-    "name": "popthestack/fitbit",
+    "name": "fufulabs/fitbit",
     "version": "0.6",
     "type": "library",
     "description": "Fitbit library with OAuth.",
     "keywords": ["fitbit"],
-    "homepage": "https://github.com/popthestack/fitbitphp",
+    "homepage": "https://github.com/fufulabs/fitbitphp",
     "license" : "Apache-2.0",
     "authors": [
         {
