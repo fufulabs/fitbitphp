@@ -4,20 +4,20 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b4c1ef4896e1a0e0b8dbf4c429c7b3b6",
+    "hash": "1bebf226fded708f501dc96812b12525",
     "packages": [
         {
             "name": "and/oauth",
-            "version": "0.6",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/logical-and/php-oauth.git",
-                "reference": "8199fb5d5e67cbd936c0a93a93807b7ebb008cc1"
+                "url": "https://github.com/jhnferraris/php-oauth.git",
+                "reference": "900cab236a1d3fe5092e3a0c55275ace96dc403c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/logical-and/php-oauth/zipball/8199fb5d5e67cbd936c0a93a93807b7ebb008cc1",
-                "reference": "8199fb5d5e67cbd936c0a93a93807b7ebb008cc1",
+                "url": "https://api.github.com/repos/jhnferraris/php-oauth/zipball/900cab236a1d3fe5092e3a0c55275ace96dc403c",
+                "reference": "900cab236a1d3fe5092e3a0c55275ace96dc403c",
                 "shasum": ""
             },
             "require": {
@@ -41,16 +41,19 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.6-dev"
+                    "dev-master": "0.7-dev"
                 }
             },
             "autoload": {
                 "psr-4": {
-                    "OAuth\\": "src/",
-                    "OAuthTest\\": "tests/"
+                    "OAuth\\": "src"
                 }
             },
-            "notification-url": "https://packagist.org/downloads/",
+            "autoload-dev": {
+                "psr-4": {
+                    "OAuthTest\\": "tests"
+                }
+            },
             "license": [
                 "MIT"
             ],
@@ -79,15 +82,15 @@
             ],
             "description": "Simple and amazing OAuth library with many providers. Just try it out!",
             "keywords": [
-                "Authentication",
-                "Buffer",
-                "Harvest",
                 "amazon",
+                "authentication",
                 "authorization",
                 "bitbucket",
                 "bitly",
                 "box",
+                "buffer",
                 "dailymotion",
+                "deviantart",
                 "dropbox",
                 "etsy",
                 "eve",
@@ -98,6 +101,7 @@
                 "foursquare",
                 "github",
                 "google",
+                "harvest",
                 "instagram",
                 "jawbone",
                 "linkedin",
@@ -120,7 +124,10 @@
                 "vkontakte",
                 "yahoo"
             ],
-            "time": "2015-04-15 19:54:19"
+            "support": {
+                "source": "https://github.com/jhnferraris/php-oauth/tree/master"
+            },
+            "time": "2015-05-30 09:52:26"
         },
         {
             "name": "gregwar/cache",
@@ -167,17 +174,17 @@
         },
         {
             "name": "gregwar/image",
-            "version": "v2.0.19",
+            "version": "v2.0.20",
             "target-dir": "Gregwar/Image",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Gregwar/Image.git",
-                "reference": "8faeedfc211162bef5cddc93bea58700c32e06f6"
+                "reference": "2c6bf2fb3b0eb844f0568d6ee55eeb86fc799414"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Gregwar/Image/zipball/8faeedfc211162bef5cddc93bea58700c32e06f6",
-                "reference": "8faeedfc211162bef5cddc93bea58700c32e06f6",
+                "url": "https://api.github.com/repos/Gregwar/Image/zipball/2c6bf2fb3b0eb844f0568d6ee55eeb86fc799414",
+                "reference": "2c6bf2fb3b0eb844f0568d6ee55eeb86fc799414",
                 "shasum": ""
             },
             "require": {
@@ -211,7 +218,7 @@
                 "gd",
                 "image"
             ],
-            "time": "2015-02-03 16:44:33"
+            "time": "2015-05-30 19:24:37"
         },
         {
             "name": "kriswallsmith/buzz",
@@ -364,9 +371,18 @@
         }
     ],
     "packages-dev": [],
-    "aliases": [],
+    "aliases": [
+        {
+            "alias": "0.6",
+            "alias_normalized": "0.6.0.0",
+            "version": "9999999-dev",
+            "package": "and/oauth"
+        }
+    ],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "and/oauth": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
