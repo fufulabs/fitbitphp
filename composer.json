@@ -25,7 +25,7 @@
   ],
   "require": {
     "php": ">=5.3.0",
-    "and/oauth": "dev-master as 0.6"
+    "and/oauth": "@dev"
   },
   "autoload": {
     "psr-0": {
