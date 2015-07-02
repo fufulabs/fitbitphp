@@ -122,6 +122,10 @@ class EndpointGateway
     $clientAndUser = $this->makeApiRequest('account/clientAndViewerRateLimitStatus');
     $client        = $this->makeApiRequest('account/clientRateLimitStatus');
 
+    if (isset($clientAndUser->errors) || isset($client->errors)) {
+      return null;
+    }
+
     return new RateLimiting(
       $clientAndUser->rateLimitStatus->remainingHits,
       $client->rateLimitStatus->remainingHits,
